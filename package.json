@@ -1,0 +1,1 @@
+{"name":"TresselAndVine","version":"1.0.0","description":"This is a website for Tressel and Vine services","main":"index.html","scripts":{"start":"npm run lite","lite":"lite-server","scss":"node-sass -o css/ css/"},"devDependencies":{"lite-server":"^2.6.1"}}

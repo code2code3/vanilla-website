@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tressel & Vine</title>
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+      </style>
+</head>
+
+
+<body>
+
+<div class="grid">
+
+      <header>
+        <h1 class="title">Tressell & Vine</h1>
+        <div style="font-size: 0.8rem;" class="socialMediaIcons">
+          <a href="https://www.instagram.com/tressellandvine/" target="_blank"><i class="fab fa-instagram-square fa-2x iconInstagram navIcon"></i></a>
+          <a href="https://www.facebook.com/tressellandvine" target="_blank"><i class="fab fa-facebook-square fa-2x iconFB navIcon"></i></a>
+          <a href="contact.html"><i class="fas fa-envelope-square fa-2x iconMail navIcon"></i></a>
+        </div> 
+
+          <nav>
+            <div class="topnav" id="myTopnav">
+              <a href = "index.html"  class = "nav-item"><i class="fas fa-home"></i>Home</a>      
+              <a href = "about.html"  class = "nav-item"><i class="fas fa-info"></i> About</a>
+              <a href = "services.html"  class = "nav-item"><i class="fas fa-paint-roller"></i> Services</a>
+              <a href = "gallery.html"  class = "current nav-item"><i class="fas fa-camera-retro"></i></i> Gallery</a>
+              <a href = "book.html"  class = "nav-item"><i class="fas fa-clipboard-list"></i> Book a consultation</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+      </header>
+  
+<div class = "section1 section2">
+  
+  <div class="content-margin content-border border-smooth grid-nested-gallery">
+    <div class = "image-holder"><img src="images/gallery/IMG-20201211-WA0000.jpg" class = "galleryImg item1" alt="Cute cat" onclick="openModal();currentSlide(1)"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG-20201211-WA0002.jpg" class = "galleryImg item2" alt="Serious cat" onclick="openModal();currentSlide(2)"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG-20201211-WA0003.jpg" class = "galleryImg item3" onclick="openModal();currentSlide(3)"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG-20201211-WA0006.jpg" class = "galleryImg item4" alt="Serious cat" onclick="openModal();currentSlide(4)"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20190410_153747_047.jpg"  class = "galleryImg item5" onclick="openModal();currentSlide(5)" alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20190809_203212_421.jpg" class = "galleryImg item6" onclick="openModal();currentSlide(6)"alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20200101_221842_430.jpg" class = "galleryImg item7" onclick="openModal();currentSlide(7)" alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20200401_160717_804.jpg" class = "galleryImg item8" onclick="openModal();currentSlide(8)"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20200823_103233967_HDR.jpg" class = "galleryImg item9" onclick="openModal();currentSlide(9)" alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20200905_201041835+(1).jpg" class = "galleryImg item10" onclick="openModal();currentSlide(10)" alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20201022_125609043.jpg" class = "galleryImg item11" onclick="openModal();currentSlide(11)" alt="Serious cat"></div>
+    <div class = "image-holder"><img src="images/gallery/IMG_20201210_144845703.jpg" class = "galleryImg item12" onclick="openModal();currentSlide(12)"></div>
+  </div>
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG-20201211-WA0000.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG-20201211-WA0002.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG-20201211-WA0003.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG-20201211-WA0006.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20190410_153747_047.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20190809_203212_421.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20200101_221842_430.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20200401_160717_804.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20200823_103233967_HDR.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20200905_201041835+(1).jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20201022_125609043.jpg" class = "modalImage">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext"></div>
+      <span class="close cursor" onclick="closeModal()"><i class="fas fa-window-close"></i></span>
+      <img src="images/gallery/IMG_20201210_144845703.jpg" class = "modalImage">
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="bookBox">
+      <h3 class = "whiteText">Book a consultation</h3>
+      <p class = "whiteText">We’ll prepare a proposal and walk you through every step of the process.</p>
+      <button class="book-button">Book Consultation</button>
+  </div>
+
+  <div>
+  <p id = "impressum">Tressell and Vine<br>alan.bolwell.ab@gmail.com<br>07749971155</p>
+  <div style="font-size: 0.5rem;" id ="footerIcons">           
+    <a href="https://www.instagram.com/tressellandvine/" target="_blank"><i class="fab fa-instagram-square fa-3x iconInstagram footerIcon"></i></a>
+    <a href="https://www.facebook.com/tressellandvine" target="_blank"><i class="fab fa-facebook-square fa-3x iconFB footerIcon"></i></a>
+    <a href="Alan.bolwell.ab@gmail.com"><i class="fas fa-envelope-square fa-3x iconMail footerIcon"></i></a>
+  </div>
+  </div>
+</footer>
+
+</div>
+
+<script src = "js/scripts.js"></script>
+<script src = "js/carousel.js"></script>
+<script src = "js/toggleNav.js"></script>
+</body>
+</html>
